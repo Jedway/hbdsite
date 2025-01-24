@@ -3,42 +3,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A simple and nice webpage">
-  <title>My Simple Webpage</title>
-  <!-- Link to a CSS stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- Add a favicon (optional) -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="A simple and nice webpage with centered content and responsive image carousels">
+  <title>Happy Birthday Snugglepuff</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffe6f0; /* Light pink background */
+      color: #4a4a4a; /* Soft gray for text */
+    }
+
+    .container {
+      text-align: center;
+      max-width: 800px;
+      width: 95%; /* Ensures it scales for smaller screens */
+      padding: 20px;
+      background: #ffffff; /* White background for content */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    header h1 {
+      margin-bottom: 20px;
+      color: #d63384; /* Deep pink for heading */
+    }
+
+    .notice {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      color: #4a4a4a;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto; /* Enable horizontal scrolling */
+      gap: 15px;
+      margin-top: 20px;
+      padding-bottom: 10px; /* Add some padding for better spacing */
+      scroll-behavior: smooth; /* Smooth scrolling */
+    }
+
+    .carousel::-webkit-scrollbar {
+      height: 8px; /* Custom scrollbar height */
+    }
+
+    .carousel::-webkit-scrollbar-thumb {
+      background-color: #d63384; /* Deep pink for scrollbar */
+      border-radius: 10px;
+    }
+
+    .carousel img {
+      flex: 0 0 auto; /* Prevent shrinking */
+      width: 150px; /* Fixed width for each image */
+      height: auto;
+      border-radius: 10px; /* Subtle rounded corners */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .carousel img:hover {
+      transform: scale(1.05); /* Slight zoom on hover */
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer p {
+      color: #d63384; /* Deep pink for footer text */
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      .carousel img {
+        width: 120px; /* Smaller images for tablets */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .carousel img {
+        width: 100px; /* Smaller images for smaller screens */
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Webpage</h1>
-    <nav>
-      <ul>
-        <li><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <h1>🎉Happy Birthday My Love🎂</h1>
+      <p class="notice">Please read through to the very end❤️</p>
+    </header>
+    <p>Happy birthday my love, you're now a big woman😌, but<br>
+    you're still my babygirl. As you turn a new age today, I want <br>
+    you to take your time and reflect on how far you've come <br>
+    especially your wins and accomplishments. I've watched you progress from a girl with plans and goals<br>
+    to a woman with a roadmap to achieving those goals and maintaining discipline while doing so.<br>
+    And as you do so as you grow older, God will help you maintain your vision and streak with whatever<br>
+    things you hope to achieve.<br>
+  When this year began, I assured and promised you that there would be a noticable change in how I handled your<br>
+wants and desires. I decided to clear your wishlist to the best of my ability for your birthday.</p>
+    <br>
+    <main>
+      <section id="section1">
+        <h2>1: iPad 10th Gen Hot-pink case with Apple pencil slot</h2>
+        <p>I looked high and low for this, because I know you particularly want it in that color to match the 
+          aesthetic. I only found for phones so I paid Bodman to search and obtain from one of their suppliers.
+        </p>
+        <div class="carousel">
+          <img src="image1.jpg" alt="Placeholder Image 1">
+          <img src="image2.jpg" alt="Placeholder Image 2">
+          <img src="image3.jpg" alt="Placeholder Image 3">
+          <img src="image4.jpg" alt="Placeholder Image 4">
+        </div>
+      </section>
 
-  <main>
-    <section id="section1">
-      <h2>Section 1</h2>
-      <p>This is the first section of the webpage. Add some content here!</p>
-    </section>
-    <section id="section2">
-      <h2>Section 2</h2>
-      <p>This is the second section of the webpage. Keep it simple and nice!</p>
-    </section>
-    <section id="section3">
-      <h2>Section 3</h2>
-      <p>End with a call-to-action or any concluding text here.</p>
-    </section>
-  </main>
+      <section id="section2">
+        <h2>2: Outlash Brand's Astra Slides In Black</h2>
+        <p>Going through their catalouge, I immediately understood why you love this brand (I think you've bought from 
+          them before). I got something for you that I'm sure you'd love. Apparently Outlash sells according to their 
+          branches (Abuja and Lagos). What you'll be receiving is from the Abuja branch since Lagos was sold out. I've
+          paid and delagated someone to handle logisitcs to your school.
+        </p>
+        <div class="carousel">
+          <img src="image1.jpg" alt="Placeholder Image 1">
+          <img src="image2.jpg" alt="Placeholder Image 2">
+          <img src="image3.jpg" alt="Placeholder Image 3">
+          <img src="image4.jpg" alt="Placeholder Image 4">
+        </div>
+      </section>
 
-  <footer>
-    <p>© 2025 Joel Edemekong. All rights reserved.</p>
-  </footer>
+      <section id="section3">
+        <h2>3: Coach Mollie Tote bag with Cherry Print & Charm </h2>
+        <p>End with a call-to-action or any concluding text here.</p>
+        <div class="carousel">
+          <img src="image1.jpg" alt="Placeholder Image 1">
+          <img src="image2.jpg" alt="Placeholder Image 2">
+          <img src="image3.jpg" alt="Placeholder Image 3">
+          <img src="image4.jpg" alt="Placeholder Image 4">
+        </div>
+      </section>
+
+      <section id="section4">
+        <h2>4:</h2>
+        <p>End with a call-to-action or any concluding text here.</p>
+        <div class="carousel">
+          <img src="image1.jpg" alt="Placeholder Image 1">
+          <img src="image2.jpg" alt="Placeholder Image 2">
+          <img src="image3.jpg" alt="Placeholder Image 3">
+          <img src="image4.jpg" alt="Placeholder Image 4">
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 For The Love Of My Life.<br> All rights to anything she wants reserved for her.</p>
+    </footer>
+  </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then((registration) => {
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch((error) => {
+            console.log('Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>  
 </body>
 </html>
